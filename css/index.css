@@ -1,0 +1,114 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url(../img/fondo.webp);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__logo {
+  min-width: 5%;
+}
+
+.header img {
+  width: 100%;
+  filter: drop-shadow(0 0 5px var(--secundary-color));
+}
+
+.header h1 {
+  font-family: "batmfa__";
+  font-size: rem;
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 30px;
+}
+
+.header h1 div {
+  display: inline-block;
+  color: var(--primary-color-dark);
+}
+
+.header h1 .palabra__junior span:nth-child(1) {display: inline-block; animation: junior 1s linear infinite  alternate; animation-delay: 0s;}
+.header h1 .palabra__junior span:nth-child(2) {display: inline-block; animation: junior 1s linear infinite  alternate; animation-delay: .2s;}
+.header h1 .palabra__junior span:nth-child(3) {display: inline-block; animation: junior 1s linear infinite  alternate; animation-delay: .4s;}
+.header h1 .palabra__junior span:nth-child(4) {display: inline-block; animation: junior 1s linear infinite  alternate; animation-delay: .6s;}
+.header h1 .palabra__junior span:nth-child(5) {display: inline-block; animation: junior 1s linear infinite  alternate; animation-delay: .8s;}
+.header h1 .palabra__junior span:nth-child(6) {display: inline-block; animation: junior 1s linear infinite  alternate; animation-delay: 1s;}
+
+.header h1 .palabra__niño span:nth-child(1) {display: inline-block; animation: niño 1s linear infinite  alternate; animation-delay: 1.2s;}
+.header h1 .palabra__niño span:nth-child(2) {display: inline-block; animation: niño 1s linear infinite  alternate; animation-delay: 1.4s;}
+.header h1 .palabra__niño span:nth-child(3) {display: inline-block; animation: niño 1s linear infinite  alternate; animation-delay: 1.6s;}
+.header h1 .palabra__niño span:nth-child(4) {display: inline-block; animation: niño 1s linear infinite  alternate; animation-delay: 1.8s;}
+
+.header h1 .palabra__ponce span:nth-child(1) {display: inline-block; animation: ponce 1s linear infinite  alternate; animation-delay: 2s;}
+.header h1 .palabra__ponce span:nth-child(2) {display: inline-block; animation: ponce 1s linear infinite  alternate; animation-delay: 2.2s;}
+.header h1 .palabra__ponce span:nth-child(3) {display: inline-block; animation: ponce 1s linear infinite  alternate; animation-delay: 2.4s;}
+.header h1 .palabra__ponce span:nth-child(4) {display: inline-block; animation: ponce 1s linear infinite  alternate; animation-delay: 2.6s;}
+.header h1 .palabra__ponce span:nth-child(5) {display: inline-block; animation: ponce 1s linear infinite  alternate; animation-delay: 2.8s;}
+
+@keyframes junior {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+    color: #8CFFE5;
+  }
+
+  100% {
+    transform: scale(1.1);
+    color: #B3FFF0 ;
+  }
+}
+
+@keyframes niño {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes ponce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+p {
+  max-width: 400px;
+  color: var(--secundary-color-dark);
+  margin: 0 50px;
+  font-size: clamp(1rem,5vw,1.3rem);
+  text-align: justify;
+}
